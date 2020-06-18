@@ -13,8 +13,8 @@ class App < Sinatra::Base
   
   post '/checkout' do 
     params["item"]
-    @session = sessions
-    sessions.merge(params)
+    @session = session
+    
   end 
     
 end
